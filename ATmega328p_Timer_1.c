@@ -1,8 +1,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
+
 int over_flower;
-
-
 void timer_init() {
     TCCR1B =0x02;
     TCNT1 = 61536;
